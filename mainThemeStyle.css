@@ -12,7 +12,29 @@ label {
     box-sizing: border-box;
 }
 
+label.large {
+    font-size: 18px;
+    padding-left: 32px;
+}
+
+label.medium {
+    font-size: 16px;
+    padding-left: 27px;
+}
+
+label.light--theme {
+    color: #2B4A52;
+}
+
+label.dark--theme {
+    color: #F9F9F9;
+}
+
 /*  RADIO  */
+
+input[type=radio] {
+    display: none;
+}
 
 input[type=radio] + label:before {
     content: "";
@@ -21,6 +43,8 @@ input[type=radio] + label:before {
     border-radius: 50%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    position: absolute;
+    left: 0;
 }
 
 input[type=radio] + label.large:before {
@@ -38,29 +62,6 @@ input[type=radio]:disabled + label {
 }
 
 /*  RADIO LIGHT  */
-
-input[type=radio] {
-    display: none;
-}
-
-input[type=radio] + label:before {
-    position: absolute;
-    left: 0;
-}
-
-input[type=radio] + label.large {
-    font-size: 18px;
-    padding-left: 32px;
-}
-
-input[type=radio] + label.medium {
-    font-size: 16px;
-    padding-left: 27px;
-}
-
-label.light--theme {
-    color: #2B4A52;
-}
 
 input[type=radio]:enabled + label.light--theme:hover {
     color: #537173;
@@ -115,10 +116,6 @@ input[type=radio]:checked + label.medium.light--theme:before {
 
 /*  RADIO DARK  */
 
-label.dark--theme {
-    color: #F9F9F9;
-}
-
 input[type=radio]:enabled + label.dark--theme:hover {
     color: #F3EADD;
 }
@@ -171,3 +168,4 @@ input[type=radio]:checked + label.medium.dark--theme:before {
     border: 6px solid #C05640;
     background-color: #F9F9F9;
 }
+
