@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 50px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.dark--theme__radio--example {
+    background-color: #2B4A52;
+    color: #faf3c7;
+}
+
+.theme--wrapper {
+    padding: 15px;
+}
